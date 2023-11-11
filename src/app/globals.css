@@ -6,3 +6,17 @@
   font-family: 'Bebas_Neue';
   src: url('../../public/fonts/BebasNeue-Regular.ttf');
 }
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../../public/fonts/Rubik-VariableFont_wght.ttf');
+}
+
+button[type="button"] {
+  background-color: black;
+  color: white;
+  width: fit-content;
+  padding: 12px 20px;
+  font-family: 'Rubik';
+  font-size: 14px;
+}

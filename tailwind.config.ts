@@ -8,11 +8,14 @@ const config: Config = {
   ],
   plugins: [],
   theme: {
-    extend: {
-      fontFamily: {
-        header: ["Bebas_Neue", "sans-serif"],
-      },
+    fontFamily: {
+      header: ["Bebas_Neue", "sans-serif"],
+      body: ["Rubik", "sans-serif"],
     },
+    colors: {
+      'accent': 'rgb(251 146 60)',
+      'accent-light': ' rgb(147 197 253)'
+    }
   },
 };
 export default config;
