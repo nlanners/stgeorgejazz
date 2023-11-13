@@ -12,11 +12,22 @@
   src: url('../../public/fonts/Rubik-VariableFont_wght.ttf');
 }
 
-button[type="button"] {
+a.button {
   background-color: black;
   color: white;
   width: fit-content;
   padding: 12px 20px;
   font-family: 'Rubik';
-  font-size: 14px;
+}
+
+input {
+  height: 48px;
+  width: 100%;
+}
+
+input, textarea {
+  border: 1px solid black;
+  padding: 4px 8px;
+  margin: 8px 0;
+  background-color: #fafafa
 }

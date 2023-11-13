@@ -1,4 +1,3 @@
-'use client';
 import type { ProfileInfo } from 'src/types/ProfileInfo';
 
 export const ProfileCard = ({
@@ -9,21 +8,15 @@ export const ProfileCard = ({
   linkName,
 }: ProfileInfo) => (
   <div className="w-1/3 flex flex-col gap-4 mb-6">
-    {image && <img src={image} />}
+    {image && <img src={image} className="max-h-96" />}
     <h4 className="font-header text-lg font-medium">{title}</h4>
     {description && (
       <p className="font-body text-sm whitespace-pre-line">{description}</p>
     )}
     {link && (
-      <button
-        type="button"
-        onClick={() => {
-          window.open(link, '_blank');
-        }}
-        className="mt-4"
-      >
+      <a className="button mt-4 text-base" href={link}>
         {linkName || 'Website'}
-      </button>
+      </a>
     )}
   </div>
 );

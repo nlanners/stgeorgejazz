@@ -1,1 +1,1 @@
-export { RebelJazzBand as default } from 'src/components/RebelJazzBand';
+export { RebelJazzBand as default } from 'src/components/rebel-jazz-band/RebelJazzBand';
